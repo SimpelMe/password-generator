@@ -38,6 +38,10 @@ a {
   text-decoration: none;
 }
 
+header {
+  margin-bottom: 1.5em;
+}
+
 nav {
   display: flex;
   align-items: center;
