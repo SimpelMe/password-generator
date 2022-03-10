@@ -63,8 +63,6 @@ h1 {
 
 .container {
   display: flex;
-  /* justify-content: center;
-  align-items: center; */
   flex-direction: column;
 }
 
@@ -75,7 +73,6 @@ h1 {
 
 button {
   font-size: 1em;
-  min-width: 20ch;
   height: 2.5em;
   padding: 5px 10px;
   color: white;
