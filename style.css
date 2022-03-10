@@ -102,9 +102,9 @@ textarea {
 }
 
 .result {
-    display: flex;
-    flex-direction: column;
-    margin-top: 2vmin;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2vmin;
 }
 
 #result {
@@ -114,8 +114,13 @@ textarea {
   resize: none;
 }
 
+.options {
+    margin-top: 3vmin;
+}
+
 input#slider {
-    width: 4.5ch;
+  width: 4.5ch;
+  font-size: inherit;
 }
 
 details {
