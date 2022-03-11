@@ -99,9 +99,7 @@ input[type="checkbox"] {
 
 textarea {
   font-size: larger;
-  width: 40ch;
-  max-width: calc(100% - 4vmin);
-  height: 4ch;
+  height: 12ch;
   padding-left: 0.5ch;
   padding-right: 0.5ch;
   margin-top: 1vmin;
