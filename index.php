@@ -2,22 +2,13 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes user-scalable=no">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Password Generator</title>
+  <?php include dirname($_SERVER['DOCUMENT_ROOT']) . "/simpel.cc/php/head.php"; ?>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <header>
-    <nav>
-      <a id="logo" class="cursordefault" href="/"><img src="../Simpel.png" alt="simpel icon" height="48" width="48" title="simpel.cc" aria-label="go to simpel dot c c"></a>
-      <h1>Password Generator</h1>
-      <a id="github" href="https://github.com/SimpelMe/password-generator" target="_blank" rel="noopener noreferrer" title="watch source code" aria-label="go to source code at github dot com">
-        <img id="github-cat" src="../github.svg" alt="github logo">
-      </a>
-    </nav>
+    <?php include dirname($_SERVER['DOCUMENT_ROOT']) . "/simpel.cc/php/header.php"; ?>
   </header>
   <main>
     <noscript>
