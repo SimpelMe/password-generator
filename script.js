@@ -41,8 +41,6 @@ const lowercaseEl = document.getElementById("lowercase");
 const numberEl = document.getElementById("number");
 const symbolEl = document.getElementById("symbol");
 
-// Button to generate the password
-const generateBtn = document.getElementById("generate");
 // Button to copy the text
 const copyBtn = document.getElementById("copy-btn");
 
@@ -53,7 +51,7 @@ copyBtn.addEventListener("click", () => {
 });
 
 // When Generate is clicked Password id generated.
-generateBtn.addEventListener("click", () => {
+function triggerGenerator() {
   const length = +lengthEl.value;
   const hasLower = lowercaseEl.checked;
   const hasUpper = uppercaseEl.checked;
@@ -61,7 +59,7 @@ generateBtn.addEventListener("click", () => {
   const hasSymbol = symbolEl.checked;
   generatedPassword = true;
   resultEl.innerText = generatePassword(length, hasLower, hasUpper, hasNumber, hasSymbol);
-});
+};
 
 // Function responsible to generate password and then returning it.
 function generatePassword(length, lower, upper, number, symbol) {

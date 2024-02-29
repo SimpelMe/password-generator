@@ -3,7 +3,7 @@
 
 <head>
   <?php include dirname($_SERVER['DOCUMENT_ROOT']) . "/simpel.cc/php/head.php"; ?>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.min.css">
 </head>
 
 <body>
@@ -17,8 +17,7 @@
     </noscript>
     <div class="container">
       <div class="buttons">
-        <button id="generate" autofocus>Generate Password</button>
-        <button id="copy-btn">Copy Password</i></button>
+        <button id="copy-btn" autofocus>Copy Password</i></button>
       </div>
 
       <div class="result">
@@ -27,33 +26,39 @@
       </div>
 
       <div class="options">
-        <label for="slider">Length:</label>
-        <input id="slider" type="number" min="4" max="99" value="23" />
+        <div>
+          <label for="slider">Length:</label>
+          <input id="slider" type="number" min="1" max="1048" value="42" oninput="triggerGenerator()"/>
+        </div>
         <details>
           <summary>More Options</summary>
-          <div>
-            <input type="checkbox" id="lowercase" checked />
-            <label for="lowercase">Include Lowercase</label>
-          </div>
-          <div>
-            <input type="checkbox" id="uppercase" checked />
-            <label for="uppercase">Include Uppercase</label>
-          </div>
-          <div>
-            <input type="checkbox" id="number" checked />
-            <label for="number">Include Numbers</label>
-          </div>
-          <div>
-            <input type="checkbox" id="symbol" checked />
-            <label for="symbol">Include Symbols</label>
+          <div class="more-options" onchange="triggerGenerator()">
+            <div>
+              <input type="checkbox" id="lowercase" checked />
+              <label for="lowercase">Include Lowercase</label>
+            </div>
+            <div>
+              <input type="checkbox" id="uppercase" checked />
+              <label for="uppercase">Include Uppercase</label>
+            </div>
+            <div>
+              <input type="checkbox" id="number" checked />
+              <label for="number">Include Numbers</label>
+            </div>
+            <div>
+              <input type="checkbox" id="symbol" checked />
+              <label for="symbol">Include Symbols</label>
+            </div>
           </div>
         </details>
       </div>
-
     </div>
 
-    <script src="script.js"></script>
   </main>
+  <script src="script.min.js"></script>
+  <script>
+    triggerGenerator();
+  </script>
 </body>
 
 </html>
